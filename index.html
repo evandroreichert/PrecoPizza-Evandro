@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Calculator</title>
+</head>
+<body>
+    <label for="iNomePizza">Nome:</label>
+    <input type="text" id="iNomePizza">
+
+    <label for="iForma">Forma:</label>
+    <select id="iForma">
+        <option value="redonda">Redonda</option>
+        <option value="quadrada">Quadrada</option>
+        <option value="retangular">Retangular</option>
+    </select>
+
+    <br>
+    <br>
+    <label for="iDimensao1">Dimensão 1:</label>
+    <input type="number" id="iDimensao1">
+
+    <br>
+    <label for="iDimensao2">Dimensão 2:</label>
+    <input type="number" id="iDimensao2">
+
+    <br>
+    <label for="iPreco">Preço:</label>
+    <input type="number" id="iPreco">
+
+    <br>
+    <button id="adicionar">Adicionar Pizza</button>
+    <button id="consultar">Consultar Pizzas</button>
+    
+    <table id="table" border="1">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Tamanho</th>
+                <th>Preço</th>
+                <th>Preço por cm²</th>
+                <th>Diferença %</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <script src="index.js"></script>
+</body>
+</html>
